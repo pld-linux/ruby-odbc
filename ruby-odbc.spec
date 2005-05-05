@@ -2,6 +2,7 @@
 %define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 %define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
 Summary:	Ruby ODBC library
+Summary(pl):	Biblioteka Ruby ODBC
 Name:		ruby-odbc
 Version:	0.996
 Release:	1
@@ -19,6 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Pure Ruby ODBC library.
+
+%description -l pl
+Czysta biblioteka Ruby ODBC.
 
 %prep
 %setup -q 
