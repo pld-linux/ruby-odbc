@@ -19,10 +19,10 @@ Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Pure Ruby ODBC library.
+Ruby ODBC library.
 
 %description -l pl
-Czysta biblioteka Ruby ODBC.
+Biblioteka ODBC dla jêzyka Ruby.
 
 %prep
 %setup -q 
