@@ -10,7 +10,6 @@ License:	GPL
 Group:		Development/Languages
 Source0:	http://www.ch-werner.de/rubyodbc/%{name}-%{version}.tar.gz
 # Source0-md5:	5084ae82120f17e6be4c0267d7c53bab
-Source1:	setup.rb
 URL:		http://www.ch-werner.de/rubyodbc/
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
