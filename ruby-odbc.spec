@@ -1,6 +1,3 @@
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-%define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
 Summary:	Ruby ODBC library
 Summary(pl):	Biblioteka Ruby ODBC
 Name:		ruby-odbc
@@ -11,6 +8,7 @@ Group:		Development/Languages
 Source0:	http://www.ch-werner.de/rubyodbc/%{name}-%{version}.tar.gz
 # Source0-md5:	5084ae82120f17e6be4c0267d7c53bab
 URL:		http://www.ch-werner.de/rubyodbc/
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
 BuildRequires:	unixODBC-devel
@@ -24,10 +22,10 @@ Ruby ODBC library.
 Biblioteka ODBC dla jêzyka Ruby.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
-ruby extconf.rb 
+ruby extconf.rb
 %{__make} \
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -fPIC"
