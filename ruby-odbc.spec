@@ -8,10 +8,10 @@ Group:		Development/Languages
 Source0:	http://www.ch-werner.de/rubyodbc/%{name}-%{version}.tar.gz
 # Source0-md5:	5084ae82120f17e6be4c0267d7c53bab
 URL:		http://www.ch-werner.de/rubyodbc/
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
 BuildRequires:	unixODBC-devel
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
