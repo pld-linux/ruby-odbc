@@ -1,12 +1,12 @@
 Summary:	Ruby ODBC library
 Summary(pl):	Biblioteka Ruby ODBC
 Name:		ruby-odbc
-Version:	0.996
-Release:	2
+Version:	0.997
+Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	http://www.ch-werner.de/rubyodbc/%{name}-%{version}.tar.gz
-# Source0-md5:	5084ae82120f17e6be4c0267d7c53bab
+# Source0-md5:	2705eb58ce71722a0e5e3da6a2e6307d
 URL:		http://www.ch-werner.de/rubyodbc/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
