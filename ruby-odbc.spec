@@ -1,5 +1,5 @@
 Summary:	Ruby ODBC library
-Summary(pl.UTF-8):   Biblioteka Ruby ODBC
+Summary(pl.UTF-8):	Biblioteka Ruby ODBC
 Name:		ruby-odbc
 Version:	0.997
 Release:	1
