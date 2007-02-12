@@ -1,5 +1,5 @@
 Summary:	Ruby ODBC library
-Summary(pl):	Biblioteka Ruby ODBC
+Summary(pl.UTF-8):   Biblioteka Ruby ODBC
 Name:		ruby-odbc
 Version:	0.997
 Release:	1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Ruby ODBC library.
 
-%description -l pl
-Biblioteka ODBC dla jêzyka Ruby.
+%description -l pl.UTF-8
+Biblioteka ODBC dla jÄ™zyka Ruby.
 
 %prep
 %setup -q
