@@ -41,6 +41,7 @@ install -d $RPM_BUILD_ROOT%{ruby_ridir}
 	archdir=$RPM_BUILD_ROOT%{ruby_archdir} \
 	sitearchdir=$RPM_BUILD_ROOT%{ruby_archdir}
 
+rm ri/created.rid
 cp -a ri/* $RPM_BUILD_ROOT%{ruby_ridir}
 
 %clean
